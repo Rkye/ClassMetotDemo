@@ -11,15 +11,15 @@ namespace ClassMetotDemo
 
         public void MusteriEkle(Musteri musteri)
         {
-            Console.WriteLine(musteri.Ad + " " + musteri.Soyad + " isimli müşteri eklendi.");
             musteriler.Add(musteri);
+            Console.WriteLine(musteri.Ad + " " + musteri.Soyad + " isimli müşteri eklendi.");
         }
 
         public void MusteriSil(Musteri musteri)
         {
+            musteriler.Remove(musteri);
             Console.WriteLine(musteri.Ad + " " + musteri.Soyad + " isimli " + musteri.BankaId + 
                 " nolu ID ye sahip müşteri silindi.");
-            musteriler.Remove(musteri);
         }
 
         
